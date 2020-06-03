@@ -1,0 +1,15 @@
+package com.learnmaven.mavendemo;
+
+/**
+ * Hello world!
+ *
+ */
+import org.apache.log4j.Logger;
+public class App 
+{
+	final static Logger Logger = Logger.getLogger(App.class);
+	public static void main( String[] args )
+    {
+        Logger.debug(new Calculator().add(1,2));
+    }
+}
