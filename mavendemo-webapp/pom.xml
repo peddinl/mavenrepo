@@ -6,7 +6,7 @@
   <artifactId>mavendemo-webapp</artifactId>
   <packaging>war</packaging>
   
-  <!-- FIXME change it to the project's website -->
+  <!--Lokesh second commit -->
   <url>http://www.example.com</url>
 <parent>
   	<groupId>com.learnmaven</groupId>
