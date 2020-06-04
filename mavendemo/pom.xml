@@ -4,13 +4,14 @@
   <artifactId>mavendemo</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
+  <groupId>com.learnmaven</groupId>
   <name>mavendemo</name>
   <url>http://maven.apache.org</url>
-  <parent>
+  <!--parent>
   	<groupId>com.learnmaven</groupId>
   	<artifactId>mavendemo-parent</artifactId>
   	<version>1.0</version>
-  </parent>
+  </parent-->
   <properties>
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
@@ -41,4 +42,13 @@
       </plugin>
      </plugins>
   </build>
+<reporting>
+     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.3</version>
+      </plugin>
+     </plugins>
+     </reporting>
 </project>

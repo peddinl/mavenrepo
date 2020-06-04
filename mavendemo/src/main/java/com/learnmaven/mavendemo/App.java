@@ -5,15 +5,19 @@ package com.learnmaven.mavendemo;
  *
  */
 import org.apache.log4j.Logger;
-public class App 
-{
-	final static Logger logger = Logger.getLogger(App.class);
-	public static void main( String[] args )
-    {
+class App{
+	final static Logger LOGGER = Logger.getLogger(App.class);
+	public static void main(String[] args){
+		int a = 1;
+		int b = 2;
+		int c = 4;
+		int d = 3;
+		int e = 5;
+		int f = 6;
         Calculator calc = new Calculator();
-		logger.debug(new Calculator().add(1,2));
-		logger.debug(new Calculator().subtract(4,3));
-		logger.debug(new Calculator().multiply(5,6));
-		logger.debug(new Calculator().divide(1,2));
+		LOGGER.debug(new Calculator().add(a, b));
+		LOGGER.debug(new Calculator().subtract(c,d));
+		LOGGER.debug(new Calculator().multiply(e,f));
+		LOGGER.debug(new Calculator().divide(a,b));
     }
-}
+ }
